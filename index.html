@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="shortcut icon" href="assets/images/img-20250108-wa0004-96x60.jpg" type="image/x-icon" />
+<meta name="description" content="WATPAC Investments — engineering Zimbabwe's energy and water future. Bespoke solar systems, borehole drilling, and certified electrical installation." />
+<meta name="theme-color" content="#0A0E1A" />
+<title>WATPAC Investments — Power, Water, Light.</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cursor"><div class="cursor-dot"></div><div class="cursor-ring"></div></div>
+
+<!-- Page loader -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <div class="loader-brand">
+      <span class="loader-w">W</span><span class="loader-a">A</span><span class="loader-t">T</span><span class="loader-p">P</span><span class="loader-a2">A</span><span class="loader-c">C</span>
+    </div>
+    <div class="loader-progress"><div class="loader-bar" id="loaderBar"></div></div>
+    <div class="loader-status">
+      <span>Zimbabwe</span>
+      <span id="loaderPct">00</span>
+    </div>
+  </div>
+</div>
+
+<!-- Grain overlay -->
+<div class="grain"></div>
+
+<!-- Navigation -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo" data-cursor="link">
+      <img src="assets/images/img-20250108-wa0004-300x188.jpg" alt="Watpac" />
+      <span>WATPAC</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#about" data-cursor="link"><span>01</span>About</a>
+      <a href="#services" data-cursor="link"><span>02</span>Services</a>
+      <a href="#work" data-cursor="link"><span>03</span>Work</a>
+      <a href="#contact" data-cursor="link"><span>04</span>Contact</a>
+    </nav>
+
+    <a href="#contact" class="nav-cta" data-cursor="button">
+      <span class="nav-cta-dot"></span>
+      <span>Start a project</span>
+    </a>
+
+    <button class="nav-burger" id="navBurger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mm-inner">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+    <div class="mm-contact">
+      <a href="tel:+263779643492">+263 779 643 492</a>
+      <a href="mailto:watpacinvestment@gmail.com">watpacinvestment@gmail.com</a>
+    </div>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" id="hero">
+
+  <!-- ── LEFT: per-slide text ── -->
+  <div class="hero-left">
+    <div class="hero-tag">
+      <span class="hero-tag-dot"></span>
+      <span>WATPAC Investments · Zimbabwe</span>
+    </div>
+
+    <div class="hero-text-slides" id="heroTextSlides">
+
+      <!-- Text slide 1 · Borehole -->
+      <div class="hero-text-slide is-active">
+        <p class="hero-eyebrow">01 · Borehole Drilling</p>
+        <h1 class="hero-headline">Reliable Deep<br><em>Borehole</em><br>Drilling.</h1>
+        <p class="hero-sub">Professional drilling with modern equipment for homes, farms, and businesses.</p>
+        <a href="#contact" class="hero-cta" data-cursor="button">Request Borehole Quote <span class="hero-cta-arrow">→</span></a>
+      </div>
+
+      <!-- Text slide 2 · Solar -->
+      <div class="hero-text-slide">
+        <p class="hero-eyebrow">02 · Solar Installation</p>
+        <h1 class="hero-headline">Power Your Home<br><em>with Solar</em><br>Energy.</h1>
+        <p class="hero-sub">Custom solar systems designed to reduce electricity costs and outages.</p>
+        <a href="#contact" class="hero-cta" data-cursor="button">Get Solar Pricing <span class="hero-cta-arrow">→</span></a>
+      </div>
+
+      <!-- Text slide 3 · Electrical -->
+      <div class="hero-text-slide">
+        <p class="hero-eyebrow">03 · Electrical Services</p>
+        <h1 class="hero-headline">Certified<br><em>Electrical</em><br>Installations.</h1>
+        <p class="hero-sub">Safe and compliant wiring for residential and commercial projects.</p>
+        <a href="#contact" class="hero-cta" data-cursor="button">Book Electrical Service <span class="hero-cta-arrow">→</span></a>
+      </div>
+
+    </div>
+
+    <!-- Dots + arrows -->
+    <div class="hero-nav-bar">
+      <div class="hero-dots" id="heroDots"></div>
+      <div class="hero-arrows">
+        <button class="hero-arrow" id="heroPrev" aria-label="Previous slide" data-cursor="button">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="hero-arrow" id="heroNext" aria-label="Next slide" data-cursor="button">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── RIGHT: contained image carousel ── -->
+  <div class="hero-right">
+    <!-- Floating stat badges -->
+    <div class="hero-badge hero-badge-1">
+      <div class="hb-num">15+</div>
+      <div class="hb-label">Years</div>
+    </div>
+    <div class="hero-badge hero-badge-2">
+      <div class="hb-num">250+</div>
+      <div class="hb-label">Projects</div>
+    </div>
+    <div class="hero-badge hero-badge-3">
+      <div class="hb-num">24/7</div>
+      <div class="hb-label">Support</div>
+    </div>
+
+    <!-- Carousel box -->
+    <div class="hero-carousel-box">
+      <div class="hero-carousel" id="heroCarousel">
+
+        <div class="hero-slide is-active">
+          <img src="assets/images/img-20250107-wa0032-696x929.jpg" alt="Borehole drilling rig" />
+          <div class="hero-sweep-band" aria-hidden="true"></div>
+        </div>
+
+        <div class="hero-slide">
+          <img src="assets/images/img-20250107-wa0010-696x928.jpg" alt="Solar panel installation" />
+          <div class="hero-sweep-band" aria-hidden="true"></div>
+        </div>
+
+        <div class="hero-slide">
+          <img src="assets/images/img-20250107-wa0048-696x928.jpg" alt="Electrical installation" />
+          <div class="hero-sweep-band" aria-hidden="true"></div>
+        </div>
+
+      </div>
+      <!-- Progress bar along the bottom of the image box -->
+      <div class="hero-progress-wrap">
+        <div class="hero-progress-fill" id="heroProgressFill"></div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Marquee -->
+<section class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Solar design</span><span class="marquee-dot">◆</span>
+    <span>Borehole drilling</span><span class="marquee-dot">◆</span>
+    <span>Electrical installation</span><span class="marquee-dot">◆</span>
+    <span>Energy storage</span><span class="marquee-dot">◆</span>
+    <span>Maintenance &amp; repair</span><span class="marquee-dot">◆</span>
+    <span>Solar design</span><span class="marquee-dot">◆</span>
+    <span>Borehole drilling</span><span class="marquee-dot">◆</span>
+    <span>Electrical installation</span><span class="marquee-dot">◆</span>
+    <span>Energy storage</span><span class="marquee-dot">◆</span>
+    <span>Maintenance &amp; repair</span><span class="marquee-dot">◆</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="section-label reveal">
+    <span class="section-label-num">01</span>
+    <span class="section-label-line"></span>
+    <span class="section-label-text">About</span>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-headline">
+      <h2 class="headline reveal">
+        We build <em>the quiet infrastructure</em>
+        behind homes, farms &amp; businesses —
+        <span class="headline-accent">reliably, and in full.</span>
+      </h2>
+    </div>
+
+    <div class="about-body">
+      <p class="reveal">
+        At WATPAC Investments, we focus on delivering custom solar solutions tailored
+        to each client's unique energy demands. Our team designs efficient systems that
+        maximize output and reduce costs — from large commercial installations to
+        schools, clinics, and private homes.
+      </p>
+      <p class="reveal">
+        Beyond solar, we specialize in borehole drilling and installation — providing
+        sustainable water sources for irrigation, industry, and daily life. And for
+        residential or commercial electrical work, our certified electricians deliver
+        precision installations that meet every safety standard.
+      </p>
+
+      <div class="about-stats">
+        <div class="stat reveal">
+          <div class="stat-num" data-count="250">0</div>
+          <div class="stat-label">Projects delivered</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat-num" data-count="15">0</div>
+          <div class="stat-label">Years in field</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat-num" data-count="98">0</div>
+          <div class="stat-label" data-suffix="%">Client retention</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat-num" data-count="24">0</div>
+          <div class="stat-label" data-suffix="/7">On-call support</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-label reveal">
+    <span class="section-label-num">02</span>
+    <span class="section-label-line"></span>
+    <span class="section-label-text">Services</span>
+  </div>
+
+  <h2 class="services-title reveal">
+    Three disciplines. <em>One standard.</em>
+  </h2>
+
+  <div class="services-list">
+
+    <article class="service" data-idx="01">
+      <div class="service-inner">
+        <div class="service-meta">
+          <span class="service-num">01 —</span>
+          <span class="service-tag">Solar</span>
+        </div>
+
+        <h3 class="service-title">
+          <span>Solar design</span>
+          <span class="service-title-italic">&amp; installation.</span>
+        </h3>
+
+        <div class="service-copy">
+          <p class="service-desc">
+            Bespoke solar systems — from off-grid homesteads to commercial rooftops.
+            We size, design, install, and commission, with monitoring built in from
+            day one.
+          </p>
+
+          <ul class="service-points">
+            <li><span>→</span> System sizing &amp; load audits</li>
+            <li><span>→</span> Panel, inverter &amp; battery supply</li>
+            <li><span>→</span> Mounting, wiring &amp; commissioning</li>
+            <li><span>→</span> Remote monitoring &amp; maintenance</li>
+          </ul>
+        </div>
+
+        <div class="service-gallery">
+          <figure class="sg sg-1">
+            <img src="assets/images/img-20250107-wa0007-696x750.jpg" alt="Solar install" loading="lazy" />
+          </figure>
+          <figure class="sg sg-2">
+            <img src="assets/images/img-20250107-wa0009-607x1080.jpg" alt="Solar panels" loading="lazy" />
+          </figure>
+          <figure class="sg sg-3">
+            <img src="assets/images/img-20250107-wa0000-696x929.jpg" alt="Rooftop solar" loading="lazy" />
+          </figure>
+          <figure class="sg sg-4">
+            <img src="assets/images/img-20250107-wa0010-696x928.jpg" alt="Panel array" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <article class="service service-alt" data-idx="02">
+      <div class="service-inner">
+        <div class="service-meta">
+          <span class="service-num">02 —</span>
+          <span class="service-tag">Water</span>
+        </div>
+
+        <h3 class="service-title">
+          <span>Borehole drilling</span>
+          <span class="service-title-italic">&amp; installation.</span>
+        </h3>
+
+        <div class="service-copy">
+          <p class="service-desc">
+            A reliable water source, properly engineered. We survey, drill, case, and
+            install pumps for irrigation, industry and household supply — with
+            regulatory compliance handled end-to-end.
+          </p>
+
+          <ul class="service-points">
+            <li><span>→</span> Site survey &amp; geological assessment</li>
+            <li><span>→</span> Rotary &amp; percussion drilling</li>
+            <li><span>→</span> Pump, tank &amp; plumbing installation</li>
+            <li><span>→</span> Water testing &amp; certification</li>
+          </ul>
+        </div>
+
+        <div class="service-gallery">
+          <figure class="sg sg-1">
+            <img src="assets/images/img-20250107-wa0034-696x929.jpg" alt="Borehole site" loading="lazy" />
+          </figure>
+          <figure class="sg sg-2">
+            <img src="assets/images/img-20250107-wa0032-696x929.jpg" alt="Drilling rig" loading="lazy" />
+          </figure>
+          <figure class="sg sg-3">
+            <img src="assets/images/img-20250107-wa0033-696x929.jpg" alt="Borehole install" loading="lazy" />
+          </figure>
+          <figure class="sg sg-4">
+            <img src="assets/images/img-20250107-wa0017-540x960.jpg" alt="Water" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <article class="service" data-idx="03">
+      <div class="service-inner">
+        <div class="service-meta">
+          <span class="service-num">03 —</span>
+          <span class="service-tag">Electrical</span>
+        </div>
+
+        <h3 class="service-title">
+          <span>Electrical install</span>
+          <span class="service-title-italic">&amp; repair.</span>
+        </h3>
+
+        <div class="service-copy">
+          <p class="service-desc">
+            Certified electricians for residential and commercial work — from new
+            wiring to fault diagnosis. Safe, inspected, and delivered on time. No
+            guesswork.
+          </p>
+
+          <ul class="service-points">
+            <li><span>→</span> New-build wiring &amp; distribution boards</li>
+            <li><span>→</span> Fault diagnosis &amp; repair</li>
+            <li><span>→</span> Lighting design &amp; installation</li>
+            <li><span>→</span> Compliance inspections</li>
+          </ul>
+        </div>
+
+        <div class="service-gallery">
+          <figure class="sg sg-1">
+            <img src="assets/images/img-20250107-wa0047-462x1024.jpg" alt="Electrical panel" loading="lazy" />
+          </figure>
+          <figure class="sg sg-2">
+            <img src="assets/images/img-20250107-wa0048-696x928.jpg" alt="Wiring" loading="lazy" />
+          </figure>
+          <figure class="sg sg-3">
+            <img src="assets/images/img-20250107-wa0044-520x520.jpg" alt="Electrical" loading="lazy" />
+          </figure>
+          <figure class="sg sg-4">
+            <img src="assets/images/img-20250107-wa0051-696x521.jpg" alt="Install" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="section-label reveal">
+    <span class="section-label-num">03</span>
+    <span class="section-label-line"></span>
+    <span class="section-label-text">Process</span>
+  </div>
+
+  <h2 class="process-title reveal">
+    How we work — <em>from site visit to switch-on.</em>
+  </h2>
+
+  <div class="process-steps">
+    <div class="pstep reveal">
+      <div class="pstep-num">01</div>
+      <div class="pstep-body">
+        <h4>Consultation</h4>
+        <p>We listen first. Site visit, energy audit or water-demand profile, and a clear brief.</p>
+      </div>
+    </div>
+    <div class="pstep reveal">
+      <div class="pstep-num">02</div>
+      <div class="pstep-body">
+        <h4>Design</h4>
+        <p>Tailored system spec, transparent bill of materials, fixed-price proposal.</p>
+      </div>
+    </div>
+    <div class="pstep reveal">
+      <div class="pstep-num">03</div>
+      <div class="pstep-body">
+        <h4>Install</h4>
+        <p>Certified crew, proper PPE, clean site discipline. Commissioned and tested.</p>
+      </div>
+    </div>
+    <div class="pstep reveal">
+      <div class="pstep-num">04</div>
+      <div class="pstep-body">
+        <h4>Support</h4>
+        <p>Warranty, scheduled maintenance, and a number you can actually call.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK GALLERY -->
+<section class="work" id="work">
+  <div class="section-label reveal">
+    <span class="section-label-num">04</span>
+    <span class="section-label-line"></span>
+    <span class="section-label-text">Selected work</span>
+  </div>
+
+  <h2 class="work-title reveal">
+    Projects delivered <em>across the country.</em>
+  </h2>
+
+  <div class="work-grid">
+    <figure class="w w-tall reveal"><img src="assets/images/img-20250107-wa0009-607x1080.jpg" alt="Solar install" loading="lazy" /><figcaption>Rooftop solar · Harare</figcaption></figure>
+    <figure class="w w-wide reveal"><img src="assets/images/img-20250107-wa0003-1080x486.jpg" alt="Solar array" loading="lazy" /><figcaption>Residential array · 8.5kW</figcaption></figure>
+    <figure class="w reveal"><img src="assets/images/img-20250107-wa0032-696x929.jpg" alt="Borehole" loading="lazy" /><figcaption>Borehole drilling</figcaption></figure>
+    <figure class="w reveal"><img src="assets/images/img-20250107-wa0048-696x928.jpg" alt="Electrical" loading="lazy" /><figcaption>Distribution board</figcaption></figure>
+    <figure class="w w-tall reveal"><img src="assets/images/img-20250107-wa0047-462x1024.jpg" alt="Electrical install" loading="lazy" /><figcaption>Electrical fit-out</figcaption></figure>
+    <figure class="w reveal"><img src="assets/images/img-20250107-wa0034-696x929.jpg" alt="Borehole" loading="lazy" /><figcaption>Water supply install</figcaption></figure>
+    <figure class="w reveal"><img src="assets/images/img-20250107-wa0010-696x928.jpg" alt="Solar" loading="lazy" /><figcaption>Commercial solar</figcaption></figure>
+    <figure class="w w-wide reveal"><img src="assets/images/img-20250107-wa0051-696x521.jpg" alt="Install" loading="lazy" /><figcaption>Site commissioning</figcaption></figure>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial">
+  <div class="testimonial-inner reveal">
+    <div class="quote-mark">"</div>
+    <p class="quote">
+      WATPAC designed a solar system that actually matches our consumption — and their
+      team cleaned up before they left. <span>That alone put them ahead of everyone else we'd tried.</span>
+    </p>
+    <div class="quote-meta">
+      <span class="quote-name">— Client, Harare</span>
+      <span class="quote-proj">Residential 6kW system</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <div class="cta-bg" aria-hidden="true"></div>
+
+  <div class="cta-inner">
+    <div class="section-label reveal" style="color: rgba(245, 241, 234, 0.55);">
+      <span class="section-label-num">05</span>
+      <span class="section-label-line"></span>
+      <span class="section-label-text">Contact</span>
+    </div>
+
+    <h2 class="cta-headline reveal">
+      Let's build <em>something that lasts.</em>
+    </h2>
+
+    <p class="cta-sub reveal">
+      Tell us about the site, the scope, and the timeline. We'll come back with a proper plan.
+    </p>
+
+    <div class="contact-grid">
+      <a class="contact-card reveal" href="tel:+263779643492" data-cursor="button">
+        <div class="contact-card-top">
+          <span class="contact-card-label">Call</span>
+          <span class="contact-card-arrow">↗</span>
+        </div>
+        <div class="contact-card-body">+263 779 643 492</div>
+        <div class="contact-card-sub">Mon–Sat · 08:00–18:00</div>
+      </a>
+
+      <a class="contact-card reveal" href="mailto:watpacinvestment@gmail.com" data-cursor="button">
+        <div class="contact-card-top">
+          <span class="contact-card-label">Email</span>
+          <span class="contact-card-arrow">↗</span>
+        </div>
+        <div class="contact-card-body">watpacinvestment<br/>@gmail.com</div>
+        <div class="contact-card-sub">We reply within one business day</div>
+      </a>
+
+      <a class="contact-card reveal" href="https://wa.me/263719643492" data-cursor="button">
+        <div class="contact-card-top">
+          <span class="contact-card-label">WhatsApp</span>
+          <span class="contact-card-arrow">↗</span>
+        </div>
+        <div class="contact-card-body">+263 719 643 492</div>
+        <div class="contact-card-sub">Fastest route to a human</div>
+      </a>
+
+      <div class="contact-card contact-card-visit reveal">
+        <div class="contact-card-top">
+          <span class="contact-card-label">Visit</span>
+          <span class="contact-card-arrow">◆</span>
+        </div>
+        <div class="contact-card-body">
+          61 Bothwell House,<br/>
+          Cnr Jason Moyo &amp;<br/>
+          First Street
+        </div>
+        <div class="contact-card-sub">Harare, Zimbabwe</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-giant" aria-hidden="true">
+    <span>WATPAC</span>
+  </div>
+
+  <div class="footer-grid">
+    <div class="footer-col">
+      <div class="footer-logo">
+        <img src="assets/images/img-20250108-wa0004-300x188.jpg" alt="Watpac" />
+      </div>
+      <p class="footer-tag">
+        Solar, water &amp; power —<br/>engineered for Zimbabwe.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h5>Index</h5>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Services</h5>
+      <a href="#services">Solar systems</a>
+      <a href="#services">Borehole drilling</a>
+      <a href="#services">Electrical install</a>
+      <a href="#services">Maintenance</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Reach us</h5>
+      <a href="tel:+263779643492">+263 779 643 492</a>
+      <a href="tel:+263775433800">0777 543 380</a>
+      <a href="mailto:watpacinvestment@gmail.com">watpacinvestment@gmail.com</a>
+      <a href="https://wa.me/263719643492">WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> WATPAC Investments. All rights reserved.</span>
+    <span>Harare · Zimbabwe</span>
+    <a href="#top" class="back-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
